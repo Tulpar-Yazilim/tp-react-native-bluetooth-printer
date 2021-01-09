@@ -1,0 +1,53 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+	package
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:3:11-42
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:1-9:12
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:4:5-74
+	android:name
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:4:22-71
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:5:22-65
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:7:22-76
+uses-sdk
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		ADDED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+		INJECTED from E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml

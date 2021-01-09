@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Bitbucket\\alanyabiletmobile\\node_modules\\react-native-bluetooth-escpos-printer\\android\\build\\intermediates\\res\\merged\\release\\values-v25\\values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Tulpar\\.gradle\\caches\\transforms-2\\files-2.1\\37631cd0ab1b46aeb23414622984ad25\\appcompat-1.0.2\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Bitbucket\\alanyabiletmobile\\node_modules\\react-native-bluetooth-escpos-printer\\android\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v25\\values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Tulpar\\.gradle\\caches\\transforms-2\\files-2.1\\37631cd0ab1b46aeb23414622984ad25\\appcompat-1.0.2\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}

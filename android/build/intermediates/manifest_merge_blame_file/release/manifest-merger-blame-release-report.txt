@@ -1,0 +1,26 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="cn.jystudio.bluetooth"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="24" />
+9-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+11-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:4:5-74
+11-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:4:22-71
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:5:5-68
+12-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:5:22-65
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:6:5-80
+13-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:7:5-78
+14-->E:\Bitbucket\alanyabiletmobile\node_modules\react-native-bluetooth-escpos-printer\android\src\main\AndroidManifest.xml:7:22-76
+15
+16</manifest>
