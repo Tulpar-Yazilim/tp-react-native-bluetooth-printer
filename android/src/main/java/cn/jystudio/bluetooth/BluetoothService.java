@@ -141,6 +141,19 @@ public class BluetoothService {
         }
     }
 
+
+    public synchronized BluetoothDevice getConnectedDevice() { 
+        BluetoothDevice connectedDevice = null;
+        if(mConnectedThread!=null){
+            connectedDevice = mConnectedThread.bluetoothDevice();
+        }
+        if(mState==STATE_CONNECTED && connectedDevice!=null){
+            return connectedDevice;
+        } else {
+            return null;
+        }
+    }
+
     /**
      * Stop all threads
      */
