@@ -317,10 +317,13 @@ public class RNBluetoothEscposPrinterModule extends ReactContextBaseJavaModule
     @ReactMethod
     public void printPic(String base64encodeStr, @Nullable  ReadableMap options) {
         int width = 0;
+        int height = 20;
         int leftPadding = 0;
+
         if(options!=null){
             width = options.hasKey("width") ? options.getInt("width") : 0;
             leftPadding = options.hasKey("left") ? options.getInt("left") : 0;
+            height = options.hasKey("height") ? options.getInt("height") : 20;
         }
 
         //cannot larger then devicesWith;
@@ -338,12 +341,20 @@ public class RNBluetoothEscposPrinterModule extends ReactContextBaseJavaModule
             sendDataByte(Command.ESC_Init);
             sendDataByte(Command.LF);
             sendDataByte(data);
-            sendDataByte(PrinterCommand.POS_Set_PrtAndFeedPaper(30));
-            sendDataByte(PrinterCommand.POS_Set_Cut(1));
+            sendDataByte(PrinterCommand.POS_Set_PrtAndFeedPaper(height));
+            // sendDataByte(PrinterCommand.POS_Set_Cut(1));
             sendDataByte(PrinterCommand.POS_Set_PrtInit());
         }
     }
 
+    @ReactMethod
+    public void cutLine(int line,final Promise promise) {
+        if(sendDataByte(PrinterCommand.POS_Set_Cut(line))){
+            promise.resolve(null);
+        }else{
+            promise.reject("COMMAND_NOT_SEND");
+        }
+    }
 
     @ReactMethod
     public void selfTest(@Nullable Callback cb) {
