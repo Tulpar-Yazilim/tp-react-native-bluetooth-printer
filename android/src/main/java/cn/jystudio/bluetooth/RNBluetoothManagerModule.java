@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Build;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import android.util.Log;
@@ -175,11 +176,17 @@ public class RNBluetoothManagerModule extends ReactContextBaseJavaModule
             int permissionChecked = ContextCompat.checkSelfPermission(reactContext, android.Manifest.permission.ACCESS_COARSE_LOCATION);
             if (permissionChecked == PackageManager.PERMISSION_DENIED) {
                 // // TODO: 2018/9/21
-                ActivityCompat.requestPermissions(reactContext.getCurrentActivity(),
-                        new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION},
-                        1);
+                ActivityCompat.requestPermissions(reactContext.getCurrentActivity(), new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
             }
 
+            // Check android 12 bluetooth permission
+            int permissionChecked2 = ContextCompat.checkSelfPermission(reactContext, android.Manifest.permission.BLUETOOTH_CONNECT);
+            if (permissionChecked2 == PackageManager.PERMISSION_DENIED && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                ActivityCompat.requestPermissions(reactContext.getCurrentActivity(), new String[]{
+                    android.Manifest.permission.BLUETOOTH_CONNECT,
+                    android.Manifest.permission.BLUETOOTH_SCAN,
+                }, 1);
+            }
 
             pairedDeivce = new JSONArray();
             foundDevice = new JSONArray();
