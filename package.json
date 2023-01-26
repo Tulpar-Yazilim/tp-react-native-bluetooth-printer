@@ -7,6 +7,14 @@
   "bundleDependencies": false,
   "deprecated": false,
   "description": "React-Native plugin for the bluetooth ESC/POS printers. This plugin is fork of react-native-bluetooth-escpos-printer",
+  "files": [
+    "index.js",
+    "android",
+    "ios",
+    "RNBluetoothEscposPrinter.podspec",
+    "!android/build",
+    "!ios/build"
+  ],
   "keywords": [
     "react-native",
     "ESC",
@@ -29,5 +37,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.1"
+  "version": "1.2.0"
 }
