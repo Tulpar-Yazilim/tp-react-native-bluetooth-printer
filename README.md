@@ -53,7 +53,7 @@ import {
 
 ### BluetoothManager
 
-BluetoothManager is the module that for Bluetooth service management, supports Bluetooth status check, enable/disable Bluetooth service,scan devices,connect/unpaire devices.
+BluetoothManager is the module that for Bluetooth service management, supports Bluetooth status check, enable/disable Bluetooth service,scan devices,connect/unpair devices.
 
 - isBluetoothEnabled ==>
   async function, check whether Bluetooth service is enabled.

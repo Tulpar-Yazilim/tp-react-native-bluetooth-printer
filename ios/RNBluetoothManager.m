@@ -214,7 +214,7 @@ RCT_EXPORT_METHOD(connect:(NSString *)address
         //centralManager:didDiscoverPeripheral:advertisementData:RSSI:
     }
 }
-//unpaire(address)
+//unpair(address)
 
 
 -(void)callStop{
