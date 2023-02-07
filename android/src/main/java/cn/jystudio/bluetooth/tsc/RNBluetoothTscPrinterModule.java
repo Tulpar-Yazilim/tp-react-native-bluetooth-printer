@@ -10,9 +10,7 @@ import com.facebook.react.bridge.*;
 import java.util.Map;
 import java.util.Vector;
 
-/**
- * Created by januslo on 2018/9/22.
- */
+ 
 public class RNBluetoothTscPrinterModule extends ReactContextBaseJavaModule
 implements BluetoothServiceStateObserver{
     private static final String TAG="BluetoothTscPrinter";
@@ -47,10 +45,7 @@ implements BluetoothServiceStateObserver{
         TscCommand.DIRECTION direction = options.hasKey("direction") ?
                 TscCommand.DIRECTION.BACKWARD.getValue() == options.getInt("direction") ? TscCommand.DIRECTION.BACKWARD : TscCommand.DIRECTION.FORWARD
                 : TscCommand.DIRECTION.FORWARD;
-//        Not Support Yet
-//        TscCommand.MIRROR mirror = options.hasKey("mirror") ?
-//                TscCommand.MIRROR.MIRROR.getValue() == options.getInt("mirror") ? TscCommand.MIRROR.MIRROR : TscCommand.MIRROR.NORMAL
-//                : TscCommand.MIRROR.NORMAL;
+ 
         TscCommand.DENSITY density = options.hasKey("density")?this.findDensity(options.getInt("density")):null;
         ReadableArray reference = options.hasKey("reference")?options.getArray("reference"):null;
 

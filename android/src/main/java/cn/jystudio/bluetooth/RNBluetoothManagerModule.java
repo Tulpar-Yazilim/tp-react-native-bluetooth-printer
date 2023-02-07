@@ -27,9 +27,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Created by januslo on 2018/9/22.
- */
 public class RNBluetoothManagerModule extends ReactContextBaseJavaModule
         implements ActivityEventListener, BluetoothServiceStateObserver {
 

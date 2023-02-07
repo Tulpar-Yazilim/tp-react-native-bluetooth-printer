@@ -450,7 +450,7 @@ RCT_EXPORT_METHOD(printColumn:(NSArray *)columnWidths
     }
 }
 
-RCT_EXPORT_METHOD(setBlob:(NSInteger) sp
+RCT_EXPORT_METHOD(setBold:(NSInteger) sp
                   withResolver:(RCTPromiseResolveBlock) resolve
                   rejecter:(RCTPromiseRejectBlock) reject)
 {
@@ -519,6 +519,7 @@ RCT_EXPORT_METHOD(printPic:(NSString *) base64encodeStr withOptions:(NSDictionar
 RCT_EXPORT_METHOD(printQRCode:(NSString *)content
                   withSize:(NSInteger) size
                   correctionLevel:(NSInteger) correctionLevel
+                  leftPadding: (NSInteger) leftPadding
                   andResolver:(RCTPromiseResolveBlock) resolve
                   rejecter:(RCTPromiseRejectBlock) reject)
 {
@@ -548,6 +549,7 @@ RCT_EXPORT_METHOD(printQRCode:(NSString *)content
         delegate.pendingReject = reject;
         delegate.width = size;
         delegate.toPrint  = dataToPrint;
+        delegate.left = leftPadding;
         delegate.now = 0;
         [delegate print];
     }

@@ -215,7 +215,7 @@ BluetoothTscPrinter.printLabel(options).then(
 
 ##### direction
 
-    the printing direction, constants of BluetoothTscPrinter.DIRECTION, values BluetoothTscPrinter.DIRECTION.FORWARD/BluetoothTscPrinter.DIRECTION.BACKWARD (0/1)
+    the printing direction, constants of DIRECTION, values DIRECTION.FORWARD/DIRECTION.BACKWARD (0/1)
 
 ##### gap
 
@@ -227,7 +227,7 @@ BluetoothTscPrinter.printLabel(options).then(
 
 ##### tear
 
-    switch of the paper cut, constants of BluetoothTscPrinter.TEAR, values ON/OFF (string 'ON','OFF')
+    switch of the paper cut, constants of TEAR, values ON/OFF (string 'ON','OFF')
 
 ##### sound
 
@@ -243,7 +243,7 @@ BluetoothTscPrinter.printLabel(options).then(
         * y
             the text print start position-y
         * fonttype
-            the font type of the text, constanst of BluetoothTscPrinter.FONTTYPE,refereces as table:
+            the font type of the text, constanst of FONTTYPE,refereces as table:
                 | CONSTANTS | VALUE   |
                 |---|---|
                 |FONT_1| "1"|
@@ -258,7 +258,7 @@ BluetoothTscPrinter.printLabel(options).then(
                 |TRADITIONAL_CHINESE| "TST24.BF2"|
                 |KOREAN| "K"|
         * rotation
-            the rotation of the text, constants of the BluetoothTscPrinter.ROTATION, referces as table:
+            the rotation of the text, constants of the ROTATION, referces as table:
                    | CONSTANTS | VALUE   |
                    |---|---|
                    |ROTATION_0| 0|
@@ -268,7 +268,7 @@ BluetoothTscPrinter.printLabel(options).then(
         * xscal
             the scal in x,
         * yscal
-            the scal in y, xscal/yscal is the constants of the BluetoothTscPrinter.FONTMUL, referces as table:
+            the scal in y, xscal/yscal is the constants of the FONTMUL, referces as table:
              | CONSTANTS | VALUE   |
              |---|---|
              |MUL_1| 1|
@@ -292,7 +292,7 @@ BluetoothTscPrinter.printLabel(options).then(
         * y
             the print start position at y
         * level
-            the error correction level, constants of BluetoothTscPrinter.EEC, referces as tables:
+            the error correction level, constants of EEC, referces as tables:
             | CONSTANTS | VALUE   |
             |---|---|
             |LEVEL_L|"L"|
@@ -367,7 +367,7 @@ BluetoothTscPrinter.printLabel(options).then(
      * y
      the print start position y.
      * mode
-     the bitmap mode of print, constants of BluetoothTscPrinter.BITMAP_MODE, valuse OVERWRITE(0),OR(1),XOR(2).
+     the bitmap mode of print, constants of BITMAP_MODE, valuse OVERWRITE(0),OR(1),XOR(2).
      * width
      the width of the image to print. (height will be calculated by image ratio)
      * image
@@ -380,37 +380,37 @@ let options = {
   width: 40,
   height: 30,
   gap: 20,
-  direction: BluetoothTscPrinter.DIRECTION.FORWARD,
+  direction: DIRECTION.FORWARD,
   reference: [0, 0],
-  tear: BluetoothTscPrinter.TEAR.ON,
+  tear: TEAR.ON,
   sound: 0,
   text: [
     {
       text: "I am a testing text",
       x: 20,
       y: 0,
-      fonttype: BluetoothTscPrinter.FONTTYPE.SIMPLIFIED_CHINESE,
-      rotation: BluetoothTscPrinter.ROTATION.ROTATION_0,
-      xscal: BluetoothTscPrinter.FONTMUL.MUL_1,
-      yscal: BluetoothTscPrinter.FONTMUL.MUL_1,
+      fonttype: FONTTYPE.SIMPLIFIED_CHINESE,
+      rotation: TSC_ROTATION.ROTATION_0,
+      xscal: FONTMUL.MUL_1,
+      yscal: FONTMUL.MUL_1,
     },
     {
       text: "Second testing text",
       x: 20,
       y: 50,
-      fonttype: BluetoothTscPrinter.FONTTYPE.SIMPLIFIED_CHINESE,
-      rotation: BluetoothTscPrinter.ROTATION.ROTATION_0,
-      xscal: BluetoothTscPrinter.FONTMUL.MUL_1,
-      yscal: BluetoothTscPrinter.FONTMUL.MUL_1,
+      fonttype: FONTTYPE.SIMPLIFIED_CHINESE,
+      rotation: TSC_ROTATION.ROTATION_0,
+      xscal: FONTMUL.MUL_1,
+      yscal: FONTMUL.MUL_1,
     },
   ],
   qrcode: [
     {
       x: 20,
       y: 96,
-      level: BluetoothTscPrinter.EEC.LEVEL_L,
+      level: EEC.LEVEL_L,
       width: 3,
-      rotation: BluetoothTscPrinter.ROTATION.ROTATION_0,
+      rotation: TSC_ROTATION.ROTATION_0,
       code: "show me the money",
     },
   ],
@@ -418,10 +418,10 @@ let options = {
     {
       x: 120,
       y: 96,
-      type: BluetoothTscPrinter.BARCODETYPE.CODE128,
+      type: TSC_BARCODETYPE.CODE128,
       height: 40,
       readable: 1,
-      rotation: BluetoothTscPrinter.ROTATION.ROTATION_0,
+      rotation: TSC_ROTATION.ROTATION_0,
       code: "1234567890",
     },
   ],
@@ -429,7 +429,7 @@ let options = {
     {
       x: 160,
       y: 160,
-      mode: BluetoothTscPrinter.BITMAP_MODE.OVERWRITE,
+      mode: BITMAP_MODE.OVERWRITE,
       width: 60,
       image: base64Image,
     },
@@ -463,7 +463,7 @@ set the under line of the text, @param line -- 0 -off, 1 - on, 2 - deeper
 
 #### printerAlign(int align)
 
-set the printer alignment, constansts: BluetoothEscposPrinter.ALIGN.LEFT/BluetoothEscposPrinter.ALIGN.CENTER/BluetoothEscposPrinter.ALIGN.RIGHT.
+set the printer alignment, constansts: ALIGN.LEFT/ALIGN.CENTER/ALIGN.RIGHT.
 Not works ant printPic() method.
 
 #### printText(String text, ReadableMap options)
@@ -526,9 +526,9 @@ const printImage = async (base64Image, imageWidth = 384, leftPadding = 0) => {
 
 set the rotate of the line.
 
-#### setBlob(int weight)
+#### setBold(int weight)
 
-set blob of the line.
+set bold of the line.
 
 #### printQRCode(String content, int size, int correctionLevel, int leftPadding)
 
@@ -545,7 +545,7 @@ const printQRCode = async (qrCodeText, qrCodeWidth = 200, leftPadding = 90) => {
   return await BluetoothEscposPrinter.printQRCode(
     qrCodeText,
     qrCodeWidth,
-    BluetoothEscposPrinter.ERROR_CORRECTION.H,
+    ERROR_CORRECTION.H,
     leftPadding
   );
 };
@@ -558,10 +558,7 @@ prints the barcode.
 Example usage:
 
 ```javascript
-const printBarcode = async (
-  barcodeText,
-  barcodeType = BluetoothEscposPrinter.BARCODETYPE.JAN13
-) => {
+const printBarcode = async (barcodeText, barcodeType = BARCODETYPE.JAN13) => {
   return await BluetoothEscposPrinter.printBarCode(
     barcodeText,
     barcodeType,
@@ -576,8 +573,8 @@ const printBarcode = async (
 ### Demos of printing a receipt
 
 ```javascript
-await BluetoothEscposPrinter.printerAlign(BluetoothEscposPrinter.ALIGN.CENTER);
-await BluetoothEscposPrinter.setBlob(0);
+await BluetoothEscposPrinter.printerAlign(ALIGN.CENTER);
+await BluetoothEscposPrinter.setBold(0);
 await BluetoothEscposPrinter.printText("MY LOVED TITLE\n\r", {
   encoding: "GBK",
   codepage: 0,
@@ -585,7 +582,7 @@ await BluetoothEscposPrinter.printText("MY LOVED TITLE\n\r", {
   heigthtimes: 3,
   fonttype: 1,
 });
-await BluetoothEscposPrinter.setBlob(0);
+await BluetoothEscposPrinter.setBold(0);
 await BluetoothEscposPrinter.printText("SECOND TITLE\n\r", {
   encoding: "GBK",
   codepage: 0,
@@ -593,7 +590,7 @@ await BluetoothEscposPrinter.printText("SECOND TITLE\n\r", {
   heigthtimes: 0,
   fonttype: 1,
 });
-await BluetoothEscposPrinter.printerAlign(BluetoothEscposPrinter.ALIGN.LEFT);
+await BluetoothEscposPrinter.printerAlign(ALIGN.LEFT);
 await BluetoothEscposPrinter.printText("Label：Value\n\r", {});
 await BluetoothEscposPrinter.printText("Code：xsd201909210000001\n\r", {});
 await BluetoothEscposPrinter.printText(
@@ -613,7 +610,7 @@ await BluetoothEscposPrinter.printText(
   "--------------------------------\n\r",
   {}
 );
-await BluetoothEscposPrinter.printerAlign(BluetoothEscposPrinter.ALIGN.CENTER);
+await BluetoothEscposPrinter.printerAlign(ALIGN.CENTER);
 await BluetoothEscposPrinter.printText("Thanks for payment\n\r\n\r\n\r", {});
-await BluetoothEscposPrinter.printerAlign(BluetoothEscposPrinter.ALIGN.LEFT);
+await BluetoothEscposPrinter.printerAlign(ALIGN.LEFT);
 ```
