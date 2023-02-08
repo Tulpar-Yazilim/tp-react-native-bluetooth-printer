@@ -387,14 +387,10 @@ public class RNBluetoothEscposPrinterModule extends ReactContextBaseJavaModule
     }
      
     @ReactMethod
-    public void printQRCode(String content, int size, int correctionLevel, @Nullable int leftPadding, final Promise promise) {
+    public void printQRCode(String content, int size, int correctionLevel, int leftPadding, final Promise promise) {
         try {
             Log.i(TAG, "生成的文本：" + content);
-
-             if(leftPadding==null){
-                leftPadding = 0; 
-            }
-
+ 
             // 把输入的文本转为二维码 
             Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();
             hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
