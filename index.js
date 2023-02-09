@@ -140,6 +140,10 @@ BluetoothEscposPrinter.ALIGN = {
   CENTER: 1,
   RIGHT: 2,
 };
+BluetoothEscposPrinter.MODE = {
+  DISABLE: 0,
+  ENABLE: 1,
+};
 
 module.exports = {
   BluetoothManager,
