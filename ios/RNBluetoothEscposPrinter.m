@@ -549,7 +549,7 @@ RCT_EXPORT_METHOD(printQRCode:(NSString *)content
         delegate.pendingReject = reject;
         delegate.width = size;
         delegate.toPrint  = dataToPrint;
-        delegate.left = leftPadding;
+        // delegate.left = leftPadding;
         delegate.now = 0;
         [delegate print];
     }
