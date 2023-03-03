@@ -31,7 +31,7 @@ Byte T[] = {0x74};//t
 Byte AND[] ={0x26}; //&
 Byte M[] = {0x4d};//M
 Byte V[] = {0x56};//V
-Byte A[] = {0x61};//a
+static Byte A[] = {0x61};//a
 Byte E[] = {0x45};//E
 Byte G[] = {0x47};//G
 
