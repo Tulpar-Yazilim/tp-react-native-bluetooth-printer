@@ -10,6 +10,7 @@
 @property NSData *toPrint;
 @property NSInteger width;
 @property NSInteger now;
+@property NSInteger left;
 @property RNBluetoothManager *printer;
 @property RCTPromiseRejectBlock pendingReject;
 @property RCTPromiseResolveBlock pendingResolve;

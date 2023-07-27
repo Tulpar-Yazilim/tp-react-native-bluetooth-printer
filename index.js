@@ -2,12 +2,12 @@ import { NativeModules } from "react-native";
 const { BluetoothManager, BluetoothEscposPrinter, BluetoothTscPrinter } =
   NativeModules;
 
-BluetoothTscPrinter.DIRECTION = {
+const DIRECTION = {
   FORWARD: 0,
   BACKWARD: 1,
 };
 
-BluetoothTscPrinter.DENSITY = {
+const DENSITY = {
   DNESITY0: 0,
   DNESITY1: 1,
   DNESITY2: 2,
@@ -25,7 +25,7 @@ BluetoothTscPrinter.DENSITY = {
   DNESITY14: 14,
   DNESITY15: 15,
 };
-BluetoothTscPrinter.TSC_BARCODETYPE = {
+const TSC_BARCODETYPE = {
   CODE128: "128",
   CODE128M: "128M",
   EAN128: "EAN128",
@@ -56,7 +56,7 @@ BluetoothTscPrinter.TSC_BARCODETYPE = {
   ITF14: "ITF14",
   EAN14: "EAN14",
 };
-BluetoothTscPrinter.FONTTYPE = {
+const FONTTYPE = {
   FONT_1: "1",
   FONT_2: "2",
   FONT_3: "3",
@@ -69,19 +69,19 @@ BluetoothTscPrinter.FONTTYPE = {
   TRADITIONAL_CHINESE: "TST24.BF2",
   KOREAN: "K",
 };
-BluetoothTscPrinter.EEC = {
+const EEC = {
   LEVEL_L: "L",
   LEVEL_M: "M",
   LEVEL_Q: "Q",
   LEVEL_H: "H",
 };
-BluetoothTscPrinter.TSC_ROTATION = {
+const TSC_ROTATION = {
   ROTATION_0: 0,
   ROTATION_90: 90,
   ROTATION_180: 180,
   ROTATION_270: 270,
 };
-BluetoothTscPrinter.FONTMUL = {
+const FONTMUL = {
   MUL_1: 1,
   MUL_2: 2,
   MUL_3: 3,
@@ -93,34 +93,34 @@ BluetoothTscPrinter.FONTMUL = {
   MUL_9: 9,
   MUL_10: 10,
 };
-BluetoothTscPrinter.BITMAP_MODE = {
+const BITMAP_MODE = {
   OVERWRITE: 0,
   OR: 1,
   XOR: 2,
 };
-BluetoothTscPrinter.PRINT_SPEED = {
+const PRINT_SPEED = {
   SPEED1DIV5: 1,
   SPEED2: 2,
   SPEED3: 3,
   SPEED4: 4,
 };
-BluetoothTscPrinter.TEAR = {
+const TEAR = {
   ON: "ON",
   OFF: "OFF",
 };
-BluetoothTscPrinter.READABLE = {
+const READABLE = {
   DISABLE: 0,
   ENABLE: 1,
 };
 
-BluetoothEscposPrinter.ERROR_CORRECTION = {
+const ERROR_CORRECTION = {
   L: 1,
   M: 0,
   Q: 3,
   H: 2,
 };
 
-BluetoothEscposPrinter.BARCODETYPE = {
+const BARCODETYPE = {
   UPC_A: 65, //11<=n<=12
   UPC_E: 66, //11<=n<=12
   JAN13: 67, //12<=n<=12
@@ -131,16 +131,16 @@ BluetoothEscposPrinter.BARCODETYPE = {
   CODE93: 72, //1<=n<=255
   CODE128: 73, //2<=n<=255
 };
-BluetoothEscposPrinter.ROTATION = {
+const ROTATION = {
   OFF: 0,
   ON: 1,
 };
-BluetoothEscposPrinter.ALIGN = {
+const ALIGN = {
   LEFT: 0,
   CENTER: 1,
   RIGHT: 2,
 };
-BluetoothEscposPrinter.MODE = {
+const MODE = {
   DISABLE: 0,
   ENABLE: 1,
 };
@@ -149,4 +149,21 @@ module.exports = {
   BluetoothManager,
   BluetoothEscposPrinter,
   BluetoothTscPrinter,
+
+  DIRECTION,
+  DENSITY,
+  TSC_BARCODETYPE,
+  FONTTYPE,
+  EEC,
+  TSC_ROTATION,
+  FONTMUL,
+  BITMAP_MODE,
+  PRINT_SPEED,
+  TEAR,
+  READABLE,
+  ERROR_CORRECTION,
+  BARCODETYPE,
+  ROTATION,
+  ALIGN,
+  MODE,
 };
