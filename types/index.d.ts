@@ -114,7 +114,7 @@ declare module "tp-react-native-bluetooth-printer" {
     Q = 3,
     H = 2,
   }
-  export enum ESC_BARCODETYPE {
+  export enum BARCODETYPE {
     UPC_A = 65, //11<=n<=12
     UPC_E = 66, //11<=n<=12
     JAN13 = 67, //12<=n<=12
@@ -258,7 +258,7 @@ declare module "tp-react-native-bluetooth-printer" {
     ): void | string | PromiseLike<void> | PromiseLike<string>;
     static printBarCode(
       content: string,
-      barcodeType: number | typeof ESC_BARCODETYPE,
+      barcodeType: number | typeof BARCODETYPE,
       width: number,
       height: number,
       fontType: number | typeof FONTTYPE,
